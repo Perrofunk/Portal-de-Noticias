@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="card" id="novedades-card-2">
-          <img class="card-img-top" src="/portal-de-noticias/img/gato.jpg" alt="Card image cap">
+          <img class="card-img-top" src="..." alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Titulo Test</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
