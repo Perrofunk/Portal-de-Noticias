@@ -42,6 +42,8 @@ function color(pagina){
         if (page === pagina){
             document.getElementById("navigation-bar-unique").className = navBarDefaultClass + "bg-" + pages.color[index];
             document.getElementById(pagina + "-button").className = buttonDefaultClass + "bg-" + pages.color[index] + " text-white";
+            document.getElementById("id-body").className = "d-flex flex-column justify-content-between";
+            document.getElementById("footer-content").className = "container-fluid mt-5 py-3 bg-" + pages.color[index];
         }
     }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Cache-control" content="no-cache">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,14 @@
       .btn-width{
         width:140px;
       }
+      body{
+          min-height:100vh;
+      }
     </style>
 </head>
-<body onload="test()">
-    <div class="container">
+<body id="id-body" class="d-flex flex-column align-content-between" onload="test()">
+    <div class="d-flex flex-column">
         
-    </div>
     <div class="container-fluid text-center bg-dark py-3 ">
         <div class="row text-white font-weight-bold">
             <div class="col">
