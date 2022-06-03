@@ -6,13 +6,14 @@
 4 = Gamer
 
 */
-const pages = {name:["novedades", "deportes", "politica", "entretenimiento", "gamer"], color:["secondary", "danger", "info", "primary", "warning"]};
+const pages = { name: ["novedades", "deportes", "politica", "entretenimiento", "gamer"], color: ["secondary", "danger", "info", "primary", "warning"] };
 var navBarDefaultClass = "container-fluid sticky-top ";
 var buttonDefaultClass = "btn btn-width ";
 
-function displayNone(){
+
+function displayNone() {
     for (let page of pages.name) {
-        if (isDisplayActive(page + "-content")){
+        if (isDisplayActive(page + "-content")) {
             let pageColor = page + "-button";
             let pageContent = page + "-content";
             document.getElementById(pageContent).style.display = "none";
@@ -22,24 +23,26 @@ function displayNone(){
     }
 }
 
-function isDisplayActive(parameter){
-    if (document.getElementById(parameter) != ""){
+function isDisplayActive(parameter) {
+    if (document.getElementById(parameter) != "") {
         return true;
     } else {
         return false;
     }
 }
-function content(pagina){
+
+function content(pagina) {
     for (let page of pages.name) {
-        if (page === pagina){
+        if (page === pagina) {
             document.getElementById(pagina + "-content").style.display = "";
         }
     }
 }
-function color(pagina){
+
+function color(pagina) {
     for (let page of pages.name) {
         let index = pages.name.indexOf(page)
-        if (page === pagina){
+        if (page === pagina) {
             document.getElementById("navigation-bar-unique").className = navBarDefaultClass + "bg-" + pages.color[index];
             document.getElementById(pagina + "-button").className = buttonDefaultClass + "bg-" + pages.color[index] + " text-white";
             document.getElementById("id-body").className = "d-flex flex-column justify-content-between";
@@ -47,16 +50,25 @@ function color(pagina){
         }
     }
 }
-function showPageContent(pagina){
+
+function showPageContent(pagina) {
     displayNone();
     content(pagina);
     color(pagina);
-    
+
 }
-const deportesCards = ["deportes-card-1", "deportes-card-2", "deportes-card-3"]
-function test(){
+const deportesCards = ["deportes-card-1", "deportes-card-2", "deportes-card-3"];
+const entretenimientoCards = ["entretenimiento-card-1", "entretenimiento-card-2", "entretenimiento-card-3"];
+const politicaCards = ["politica-card-1", "politica-card-2", "politica-card-3"];
+
+function loadLatest() {
     function integerAleatorio(max) {
         return Math.floor((Math.random() * max.length));
-      }
+    }
     document.getElementById("novedades-card-2").innerHTML = document.getElementById(deportesCards[integerAleatorio(deportesCards)]).innerHTML;
+    document.getElementById("novedades-card-2").className = "card border-danger";
+    document.getElementById("novedades-card-3").innerHTML = document.getElementById(entretenimientoCards[integerAleatorio(entretenimientoCards)]).innerHTML;
+    document.getElementById("novedades-card-3").className = "card border-primary";
+    document.getElementById("novedades-card-1").innerHTML = document.getElementById(politicaCards[integerAleatorio(politicaCards)]).innerHTML;
+    document.getElementById("novedades-card-1").className = "card border-info";
 }

@@ -14,9 +14,27 @@
       body{
           min-height:100vh;
       }
+      img {
+          aspect-ratio: 172/115;
+          object-fit:cover;
+      }
+      .transition-out {
+          transition:1s;
+          opacity:0%;
+      }
+      .transition-in {
+          transition:1s;
+          opacity:100%;
+      }
+      .ocultar{
+          display:none;
+      }
+      .mostrar{
+          display:unset;
+      }
     </style>
 </head>
-<body id="id-body" class="d-flex flex-column align-content-between" onload="test()">
+<body id="id-body" class="d-flex flex-column align-content-between" onload="loadLatest()">
     <div class="d-flex flex-column">
         
     <div class="container-fluid text-center bg-dark py-3 ">

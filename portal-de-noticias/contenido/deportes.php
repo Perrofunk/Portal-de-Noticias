@@ -1,7 +1,7 @@
 <main id="deportes-content" style="display:none">
     <h4 class="font-weight-light my-2 text-center">Deportes</h4>
     <div class="card-deck px-5 mx-4">
-        <div class="card" id="deportes-card-1">
+        <div class="card border-danger" id="deportes-card-1">
             <div class="card-header">
                 <h5 class="d-inline-block text-left">Header</h5>
             </div>
@@ -14,7 +14,7 @@
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-        <div class="card" id="deportes-card-2">
+        <div class="card border-danger" id="deportes-card-2">
             <div class="card-header">
                 <h5 class="row"><div class="col">header</div> <div class="col text-right">2</div> </h5>
             </div>
@@ -27,7 +27,7 @@
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-        <div class="card" id="deportes-card-3">
+        <div class="card border-danger" id="deportes-card-3">
             <div class="card-header">
                 <h5 class="d-inline-block text-left">Header</h5>
             </div>
