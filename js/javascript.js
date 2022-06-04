@@ -6,7 +6,21 @@
 4 = Gamer
 
 */
-const pages = { name: ["novedades", "deportes", "politica", "entretenimiento", "gamer"], color: ["secondary", "danger", "info", "primary", "warning"] };
+function getNavButtons(pagina) {
+    const navButtons = document.getElementById(pagina + "-button");
+    return navButtons;
+}
+
+function getPageContent(pagina) {
+    const pageContent = document.getElementById(pagina + "-content");
+    return pageContent;
+}
+const navBar = document.getElementById("navigation-bar-unique");
+const footer = document.getElementById("footer-content");
+const pages = {
+    name: ["novedades", "deportes", "politica", "entretenimiento", "gamer"],
+    color: ["secondary", "danger", "info", "primary", "warning"]
+};
 var navBarDefaultClass = "container-fluid sticky-top ";
 var buttonDefaultClass = "btn btn-width ";
 
@@ -14,10 +28,8 @@ var buttonDefaultClass = "btn btn-width ";
 function displayNone() {
     for (let page of pages.name) {
         if (isDisplayActive(page + "-content")) {
-            let pageColor = page + "-button";
-            let pageContent = page + "-content";
-            document.getElementById(pageContent).style.display = "none";
-            document.getElementById(pageColor).className = buttonDefaultClass;
+            getPageContent(page).style.display = "none";
+            getNavButtons(page).className = buttonDefaultClass;
             console.log(page);
         }
     }
@@ -34,7 +46,7 @@ function isDisplayActive(parameter) {
 function content(pagina) {
     for (let page of pages.name) {
         if (page === pagina) {
-            document.getElementById(pagina + "-content").style.display = "";
+            getPageContent(pagina).style.display = "";
         }
     }
 }
@@ -43,10 +55,9 @@ function color(pagina) {
     for (let page of pages.name) {
         let index = pages.name.indexOf(page)
         if (page === pagina) {
-            document.getElementById("navigation-bar-unique").className = navBarDefaultClass + "bg-" + pages.color[index];
-            document.getElementById(pagina + "-button").className = buttonDefaultClass + "bg-" + pages.color[index] + " text-white";
-            document.getElementById("id-body").className = "d-flex flex-column justify-content-between";
-            document.getElementById("footer-content").className = "container-fluid mt-5 py-3 bg-" + pages.color[index];
+            navBar.className = navBarDefaultClass + "bg-" + pages.color[index];
+            getNavButtons(pagina).className = buttonDefaultClass + "bg-" + pages.color[index] + " text-white";
+            footer.className = "container-fluid mt-5 py-3 bg-" + pages.color[index];
         }
     }
 }
