@@ -66,7 +66,6 @@ function showPageContent(pagina) {
     displayNone();
     content(pagina);
     color(pagina);
-
 }
 const deportesCards = ["deportes-card-1", "deportes-card-2", "deportes-card-3"];
 const entretenimientoCards = ["entretenimiento-card-1", "entretenimiento-card-2", "entretenimiento-card-3"];

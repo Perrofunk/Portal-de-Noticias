@@ -7,32 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
     <link rel="stylesheet" href="/portal-de-noticias/css/bootstrap.css">
-    <style>
-      .btn-width{
-        width:140px;
-      }
-      body{
-          min-height:100vh;
-      }
-      img {
-          aspect-ratio: 172/115;
-          object-fit:cover;
-      }
-      .transition-out {
-          transition:1s;
-          opacity:0%;
-      }
-      .transition-in {
-          transition:1s;
-          opacity:100%;
-      }
-      .ocultar{
-          display:none;
-      }
-      .mostrar{
-          display:unset;
-      }
-    </style>
+    <link rel="stylesheet" href="/portal-de-noticias/css/styles.css">
 </head>
 <body id="id-body" class="d-flex flex-column align-content-between" onload="loadLatest()">
     <div class="d-flex flex-column">
