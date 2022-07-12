@@ -5,7 +5,7 @@
             <div class="card-header bg-danger text-white">
                 <h5 class="d-inline-block text-left">Header</h5>
             </div>
-          <img class="card-img-top" src="/portal-de-noticias/img/bivol.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/bivol.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Carta numero uno</h5>
             <p class="card-text">El campeon Dmitry Bivol defiende su titulo contra el cuco del boxeo Canelo Alvarez. </p>
@@ -18,7 +18,7 @@
             <div class="card-header bg-danger text-white">
                 <h5 class="row"><div class="col">header</div> <div class="col text-right">2</div> </h5>
             </div>
-          <img class="card-img-top" src="/portal-de-noticias/img/courtois.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/courtois.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Carta Numero dos</h5>
             <p class="card-text">Excelente arquero. un culo teine el real madrid</p>
@@ -31,7 +31,7 @@
             <div class="card-header bg-danger text-white">
                 <h5 class="d-inline-block text-left">Header</h5>
             </div>
-          <img class="card-img-top" src="/portal-de-noticias/img/adesanya.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/adesanya.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Carta numero tres</h5>
             <p class="card-text">El negro Adesanya perdio su titulo.</p>

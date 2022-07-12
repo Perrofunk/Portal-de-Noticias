@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="card" id="novedades-card-3">
-          <img class="card-img-top" src="/portal-de-noticias/img/perro.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/perro.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
